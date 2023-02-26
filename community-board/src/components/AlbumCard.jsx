@@ -1,10 +1,14 @@
 import React from 'react';
 
 
-function AlbumCard() {
+function AlbumCard(props) {
     return (
-        <div>
-            
+        <div className="card">
+            <div className="card-body">
+                <img className = "image" src={props.cover} alt={props.title} />
+                <div className= "title">{props.title}</div>
+                <div className= "artist">{props.artist}</div>
+            </div>
         </div>
     );
 }
