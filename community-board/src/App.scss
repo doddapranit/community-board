@@ -23,10 +23,10 @@ $radius: 0.2rem;
     padding: 0;
 }
 
-// .card-body {
-//   font-family: Oxygen, sans-serif;
-
-// }
+.card-body {
+  font-family: Oxygen, sans-serif;
+  margin: auto;
+}
 .card {
     overflow: hidden;
     box-shadow: 0 2px 20px $clr-gray300;
@@ -39,11 +39,37 @@ $radius: 0.2rem;
 }
 
 .image {
-    height:12rem;
+    height: 12rem;
     width: 100%;
     object-fit: cover;
 }
 
-.title {
+.info {
     padding: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    justify-content: space-between;
+    gap: 7rem;
+    background-color: white;
+}
+
+.header {
+    width: 1450px;
+}
+.Title {
+    // font-family: Oxygen, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
 }

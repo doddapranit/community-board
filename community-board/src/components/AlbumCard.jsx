@@ -6,8 +6,8 @@ function AlbumCard(props) {
         <div className="card">
             <div className="card-body">
                 <img className = "image" src={props.cover} alt={props.title} />
-                <div className= "title">{props.title}</div>
-                <div className= "artist">{props.artist}</div>
+                <div className= "info">{props.title}</div>
+                <div className= "info">{props.artist}</div>
             </div>
         </div>
     );
