@@ -17,7 +17,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented required features:
 
-![](https://github.com/doddapranit/community-board/community-board/src/assets/proj1.gif)
+![](https://github.com/doddapranit/community-board/blob/main/community-board/src/assets/proj1.gif)
 
 GIF created with LICEcap v1.28 for macOS
 
