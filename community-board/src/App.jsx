@@ -1,35 +1,40 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import hhtheader from './assets/hhtheader.jpeg'
+import mmbs from './assets/mmbs.webp'
+import ramona from './assets/ramona.webp'
+import tango from './assets/tango.jpg'
+import dry from './assets/dry.jpeg'
+import roses from './assets/roses.jpeg'
+import tfs from './assets/tfs.jpeg'
+import mmesyf from './assets/mmesyf.jpeg'
+import nothankyou from './assets/nothankyou.jpeg'
+import _2000 from './assets/_2000.jpeg'
+import $$$ from './assets/$$$.jpeg'
+import './App.scss'
+import AlbumCard from './components/AlbumCard'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <img className = "header" src={hhtheader} alt="header" />
+      <div className = "Title"> Best Hip Hop Albums of 2022</div>
+      <div className="wrapper">
+          <AlbumCard title = "Mr. Morale and The Big Steppers" artist = "Kendrick Lamar" cover = {mmbs} />
+          <AlbumCard title = "Ramona Park Broke My Heart" artist = "Vince Staples" cover = {ramona} />
+          <AlbumCard title = "Tango" artist = "G Perico" cover = {tango} />
+          <AlbumCard title = "It's Almost Dry" artist = "Pusha T" cover = {dry} />
+          <AlbumCard title = "Digital Roses Don't Die" artist = "Big K.R.I.T." cover = {roses} />
+          <AlbumCard title = "The Forever Story" artist = "JID" cover = {tfs} />
+          <AlbumCard title = "Melt My Eyes, See Your Future" artist = "Denzel Curry" cover = {mmesyf} />
+          <AlbumCard title = "NO THANK YOU" artist = "Little Simz" cover = {nothankyou} />
+          <AlbumCard title = "2000" artist = "Joey Bada$$" cover = {_2000} />
+          <AlbumCard title = "$oul $old $eparately" artist = "Freddie Gibbs" cover = {$$$} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-      <div className = "Title"> Top 10 Albums of 2022</div>
     </div>
   )
 }
 
-export default App
+export default App;
